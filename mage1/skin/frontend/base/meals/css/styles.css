@@ -1,0 +1,184 @@
+/* CSS Document */
+
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead,tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* Common Classes */
+body{background:url("../images/bgrd.jpg") repeat-x scroll 0 0 transparent;}
+a{text-decoration:none;}
+.floatLeft{float:left;}
+.floatRight{float:right;}
+.alignCenter{text-align:center;}
+.alignLeft{text-align:left;}
+.alignRight{text-align:right;}
+.lineHeight{line-height:19px;}
+.bold{font-weight:bold;} 
+.greenTxt{color:#608825;}
+.redTxt{color:#cc0000;}
+
+/* Main Container */
+.subWrapper{margin: 0 auto;width: 1020px;}
+
+/* HEADER */
+#header{float:left; width:100%;}
+#header .logo{float:left;}
+#header .needHelp{float:left; margin: 37px 0px 0px 35px;}
+#header .top-content{margin: 0;width: 100%;}
+#header .button-container{margin-top:10px;float:right;width:180px;}
+#header button.shoppingCart{cursor:pointer;float:right; width:170px; height:40px; background:url(../images/sprite-img.png) no-repeat; border:0px; padding:0px; margin:0px;background-position:-288px -4px;}
+#header button.orderNow{cursor:pointer;float:right; width:162px; height:60px; background:url(../images/sprite-img.png) no-repeat; border:0px; padding:0px; margin: 3px 0px 0px 10px;background-position:-463px 0px;}
+
+/* Top Navigation */
+#header .nav{float:right;width:674px;}
+#header .nav a{float:left; font:17px/17px 'Calibri'; color:#fff; margin-left: 14px;background:#5c8727;padding:3px 10px 5px;border-radius:5px;width:100px;text-align:center;}
+#header .nav a.active{background-color:#b32317;}
+
+/* CONTENT */
+#content{float:left;width:100%;border-top:5px solid #81C193;padding:10px 0px 20px;background:url(../images/midSec.jpg) repeat;}
+
+/* Slideshow */
+.ui-tabs-nav-item a{background:url('../images/sprite-img.png') no-repeat; height: 68px;width: 248px;display:block;color:#000;font:19px/61px "Century Gothic";padding:0 0 0 20px;background-position:-275px -59px;}
+.ui-tabs-nav-item a b{color:#df7d26;}
+.ui-tabs-selected a{background:url('../images/sprite-img.png') no-repeat;color:#fff;background-position:-2px -59px;}
+.ui-tabs-selected a b{color:#f9b579;}
+.banner{float:left;width: 100%;margin:20px 0 6px;}
+.ui-tabs-nav{float:left;margin:80px 0px 0px;width:280px;}
+.ui-tabs-panel{float:left;width:740px;}
+#rotator{float:left;}
+#rotator .ui-tabs-hide {display:none;}
+
+/* Orange Boxes */
+.rfoodCcMealsPw{float:left; } 
+.rfoodCcMealsPw a{float:left; margin-right:57px;display:block;} 
+.rfoodCcMealsPw a.no-mar{margin-right:0px;}
+.rfoodCcMealsPw a.real-food{background:url('../images/sprite-img.png') no-repeat scroll -2px -129px transparent; height: 78px;width:302px;}
+.rfoodCcMealsPw a.chef-Crafted-Meals{background:url('../images/sprite-img.png') no-repeat -2px -213px transparent; height: 78px;width:302px;}
+.rfoodCcMealsPw a.yourPlan-yourWay{background:url('../images/sprite-img.png') no-repeat -309px -129px transparent; height: 78px;width:302px;}
+
+/* Content Boxes (Left & Right) */
+.mealPlanDietAnalysis{width:1020px; float:left; margin: 8px 0px 0px 0px;}
+.mealPlanDietAnalysis .mealPlan{float:left; width: 725px;border: 1px solid #CED9E2;border-radius:10px;background:#fff;}
+.mealPlanDietAnalysis .mealPlan .header{background:url(../images/mealPlan-bg.jpg) repeat-x;border-radius: 10px 10px 0 0;float: left;font: 24px/24px 'Marcellus SC',serif;padding:12px 0 12px 10px;width: 715px;border-bottom:1px solid #CED9E2;}
+.mealPlanDietAnalysis .mealPlan .section{float:left; width: 701px; padding: 10px;font:12px/14px 'tahoma'; color:#737475;}
+.mealPlanDietAnalysis .mealPlan .section .leftMealPlan{float: left; padding: 131px 0px 0px 46px;}
+.mealPlanDietAnalysis .mealPlan .section  #favorite_plan {float: left; margin: 8px 0px 0px 45px;}
+.mealPlanDietAnalysis .mealPlan .section .semi-strong { font-weight:700; }
+.mealPlanDietAnalysis .mealPlan .section .plan_point{border-bottom: 1px #e8e9e9 solid;background-image: url('../images/home_check.png');background-repeat: no-repeat;background-position: 10px 15px;width: 320px;padding: 15px 10px 15px 75px;}
+.mealPlanDietAnalysis .mealPlan .section h3{color: #70934a;font:20px/20px 'Titillium Web', sans-serif; font-weight:200;letter-spacing: -1px;margin: 0; padding: 0;}
+
+.mealPlanDietAnalysis .DietAnalysis{float:right; width:285px;border-radius:10px 10px 10px 10px;border:1px solid #C4DE7B;background:#f8f8ef;}
+.mealPlanDietAnalysis .DietAnalysis .header{float:left; width:270px; height: 37px; background:url(../images/sprite-img.png) no-repeat -3px -2px;font:24px/24px 'Marcellus SC', serif; padding: 12px 0px 0px 15px;}
+.mealPlanDietAnalysis .DietAnalysis .section{float:left; width: 263px;padding: 10px; min-height:430px;}
+.mealPlanDietAnalysis .DietAnalysis .section p{font:15px/17px "Century Gothic"; color:#586e01; float:left;}
+.mealPlanDietAnalysis .DietAnalysis .section form{float:left; border-top:1px dashed #a1b921; border-bottom:1px dashed #a1b921; padding: 26px 10px; font:14px 'arial'; color:#4d4d4c; margin: 11px 0px 0px 0px; height: 120px;}
+.mealPlanDietAnalysis .DietAnalysis .section form div.row{float:left; margin-bottom: 22px;}
+.mealPlanDietAnalysis .DietAnalysis .section form div.row .lable{float:left; width: 52px;}
+.mealPlanDietAnalysis .DietAnalysis .section form div.row .fields{float:left; width:150px;}
+.mealPlanDietAnalysis .DietAnalysis .section form div.row .fields input{border: 1px solid #D2D0D0;border-radius: 5px 5px 5px 5px;height: 19px;margin-right: 10px;width: 79px;}
+.mealPlanDietAnalysis .DietAnalysis .section form div.row .fields button{background:url(../images/sprite-img.png) no-repeat -310px -208px; width:101px; height:36px; border:none; color:#fff; font:13px 'Tahoma'}
+
+/* FOOTER */
+#footer {float:left;width: 1020px;background:url(../images/footer-bg.jpg) repeat-x;width:100%; border-top:5px solid #81c193;}
+#footer div.line{float:left; padding-top: 15px;border-right:1px solid #03621e;height:132px;}
+#footer div h4{ font:13px 'arial'; color:#cc0000; text-transform:uppercase;}
+#footer div ul{margin: 8px 0px 0px 20px; padding:0px;}
+#footer div li{list-style:disc; color:#000;margin: 0px 0px 5px 0px; padding:0px;}
+#footer div li a{font:12px 'arial'; color:#000;}
+#footer div li a:hover{font:12px 'arial'; color:#03621e;}
+#footer div.div-1 {width: 165px;}
+#footer div.div-2 {margin-left: 10px;width: 100px;}
+#footer div.div-3 {margin-left: 10px;width: 95px;}
+#footer div.div-4 {margin-left: 10px;width: 135px;}
+#footer div.div-5 {margin-left: 10px;width: 170px;}
+#footer div.div-6 {margin-left: 10px;width: 130px;}
+#footer div.div-7 {border-right: 0 none;margin-left: 10px;width: 150px;}
+
+/*Extra Css*/
+/*Nivo Slider*/
+
+/*
+ * jQuery Nivo Slider v3.2
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* The Nivo Slider styles */
+.nivoSlider {position:relative;width:100%;height:auto;overflow: hidden;}
+.nivoSlider img {position:absolute;top:0px;left:0px;max-width: none;}
+.nivo-main-image {display: block !important;position: relative !important; width: 100% !important;}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {position:absolute;top:0px;left:0px;width:100%;height:100%;border:0;padding:0;margin:0;z-index:6;display:none;background:white; filter:alpha(opacity=0); opacity:0;}
+
+/* The slices and boxes in the Slider */
+.nivo-slice {display:block;position:absolute;z-index:5;height:100%;top:0;}
+.nivo-box {display:block;position:absolute;z-index:5;overflow:hidden;}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {position:absolute;left:0px;bottom:0px;background:#000;color:#fff;width:100%;z-index:8;padding: 5px 10px;opacity: 0.8;overflow: hidden;display: none;-moz-opacity: 0.8;filter:alpha(opacity=8);-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */-moz-box-sizing: border-box;/* Firefox, other Gecko */box-sizing: border-box;/* Opera/IE 8+ */}
+.nivo-caption p {padding:5px;margin:0;}
+.nivo-caption a {display:inline !important;}
+.nivo-html-caption {display:none;}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {position:absolute;top:45%;z-index:9;cursor:pointer;}
+.nivo-prevNav {left:0px;background:url(../images/banner-arrow-left.png) no-repeat;width:41px;height:41px;}
+.nivo-nextNav {right:0px;background:url(../images/banner-arrow-right.png) no-repeat;width:41px;height:41px;	}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {text-align:center;padding: 15px 0;float: left; position: absolute;  margin: 360px 0px 0px 480px; height: 15px; color: #fff;z-index:10;}
+.nivo-controlNav a {cursor:pointer;background:url(../images/banner-pagination.png) no-repeat;width:15px; height:15px;float: left;margin-right:5px;}
+.nivo-controlNav a.active {font-weight:bold;background:url(../images/banner-selected.png) no-repeat;}
